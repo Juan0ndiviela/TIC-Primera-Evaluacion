@@ -1,0 +1,7 @@
+def tabla_multiplicar():
+    ntabla=input("Dime un numero: ")
+    for f in range(1,11):
+        multiplicacion=int(ntabla)*f
+        print(ntabla,"x",f,"=",multiplicacion)
+        
+tabla_multiplicar()
