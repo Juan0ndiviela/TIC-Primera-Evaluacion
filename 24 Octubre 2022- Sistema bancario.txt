@@ -15,7 +15,7 @@ def banco():
                 print("Te quedan " + str(resta))
             else:
                 print("No puedes sacar "+ str(billetes))
-                print("No te queda más dinero")
+                print("No tienes tanto dinero")
         if decision=="M":
             billetes=int(input("Qué cantidad quieres meter?: "))
             suma=dinero + billetes
