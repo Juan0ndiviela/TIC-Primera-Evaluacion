@@ -1,0 +1,12 @@
+#Un programa que te diga la letra del NIF
+#Dependiendo del número que metas
+def letra_nif():
+    seguir=True
+    while(seguir==True):
+        n=int(input("Escribe el número del NIF deseado: "))
+        palabra='TRWAGMYFPDXBNJZSQVHLCKE'
+        if(n>99999999):
+            print("Número inválido de NIF")
+        else:
+            print('La letra del DNI es: ', palabra[n%23])
+letra_nif()
