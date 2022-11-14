@@ -1,8 +1,10 @@
+#Pide una palabra, la deletrea y cuenta el número de letras que tiene
 seguir=True
 while(seguir==True):
     def deletreo():
         palabra=input("Dime una palabra: ")
         for cont in range(0, len(palabra)):
             print(palabra[cont]+ ' ')
+        print("La palabra tiene "+ str(len(palabra)) + " letras")
             
     deletreo()
