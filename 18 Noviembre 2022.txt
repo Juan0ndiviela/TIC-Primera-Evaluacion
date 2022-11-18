@@ -1,0 +1,8 @@
+#Un programa que te pide un texto y te lo codifica
+seguir=True
+while(seguir==True):
+    entrada="abcdefghijklmnñopqrstuvwxyz"
+    salida="fghijklmnñopqrstuvwxyzabcde"
+    cambio=str.maketrans(entrada,salida)
+    texto=input("Escribe un texto: ")
+    print(texto.translate(cambio))    
