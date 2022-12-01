@@ -1,0 +1,14 @@
+#Lee una palabra, la invierte, y sustituye las vocales por mayúsculas
+def invierte_palabras():
+    seguir=True
+    while(seguir==True):
+        palabra=input("Dime una palabra que quieras ivertir: ")
+        inversa=""
+        for cont in range(len(palabra)-1, -1, -1):
+            inversa += palabra[cont]
+        entrada="abcdefghijklmnñopqrstuvwxyz"
+        salida="AbcdEfghIjklmnñOpqrstUvwxyz"
+        cambio=str.maketrans(entrada,salida)
+        print("Palabra invertida: ",inversa.translate(cambio))
+        
+invierte_palabras()
